@@ -1,0 +1,3 @@
+"""
+gmxstore component configuration defaults.
+"""

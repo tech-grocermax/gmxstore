@@ -1,0 +1,3 @@
+recursive-include gmxstoredeploy/templates *
+recursive-include gmxstoredeploy/data *
+include gmxstoredeploy/versions.json
