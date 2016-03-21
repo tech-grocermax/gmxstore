@@ -17,6 +17,7 @@ setup(name='gmxstore',
           'nose>=1.0',
       ],
       install_requires=[
+          'requests>=2.0',
           'Flask>=0.8',
           'timber>=1.5',
           'uWSGI>=1.9.20',

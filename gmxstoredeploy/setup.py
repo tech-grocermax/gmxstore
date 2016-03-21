@@ -19,7 +19,7 @@ setup(name='gmxstoredeploy',
       ],
       install_requires=[
           'elmer>=1.2',
-          'fabware>=1.0',
+#          'fabware>=1.0',
       ],
       include_package_data=True
       )
