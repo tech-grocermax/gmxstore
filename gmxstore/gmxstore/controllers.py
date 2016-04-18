@@ -11,7 +11,7 @@ from flask import Response, jsonify
 from requests import codes
 from ujson import dumps
 
-from filters import extract_apk_detail
+from filters import extract_apk_detail, authenticate_service_request
 
 def create_routes(app):
     @app.route("/")
@@ -22,6 +22,7 @@ def create_routes(app):
         return app.config['MESSAGE']
 
     @app.route("/builds")
+    @authenticate_service_request
     def get_builds():
         """
         Returns list of latest builds by reading builds from asset directory.

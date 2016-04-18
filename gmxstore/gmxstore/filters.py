@@ -49,11 +49,10 @@ def auth_user_credentials(f):
         return decorated
 
 
-def auth_admin(f):
+def authenticate_service_request(f):
         @wraps(f)
         def decorated(*fargs, **fkwargs):
-            if request.authorization and get_admin(request.authorization.get('username'),
-                                                   request.authorization.get('password')):
+            if request.authorization and request.authorization.get('username','')=='gmxapp' and request.authorization.get('password', '')=='rX-V*;wc4Y&wZM[*':
                 return f(*fargs, **fkwargs)
             abort(codes.UNAUTHORIZED)
         return decorated
