@@ -66,7 +66,7 @@ PACKAGE_DETAILS = {
         "id": "9",
         "name": "Core Operation App",
         "package": "com.rgretail.coreoperationapp",
-        "version_code": "1",
+        "version_code": "2",
         "icon": "coreoperations.png"
     },
     "GRN": {
